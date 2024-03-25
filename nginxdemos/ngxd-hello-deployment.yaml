@@ -32,3 +32,14 @@ spec:
           labelSelector:
             matchLabels:
               app: ngxd-hello
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: ngxd-hello-service
+  namespace: default
+spec:
+  ports:
+    - port: 80
+  selector:
+    app: ngxd-hello
