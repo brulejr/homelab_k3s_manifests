@@ -30,7 +30,7 @@ metadata:
 spec:
   ports:
     - name: http
-      port: 8000
+      port: 80
       protocol: TCP
       targetPort: 80
   selector:
@@ -54,4 +54,4 @@ spec:
             service:
               name: site-nginx-hello-service
               port:
-                number: 8000
+                number: 80
